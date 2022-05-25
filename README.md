@@ -4,16 +4,16 @@
 
 We introduce Displacement Aware Relation Module(DisARM), a novel neural network module for enhancing the performance of 3D object detection in point cloud scenes. The core idea is extracting the most principal contextual information is critical for detection while the target is incomplete or featureless. We find that relations between proposals provide a good representation to describe
 the context. However, adopting relations between all the object or patch proposals for detection is inefficient, and an imbalanced combination of local and global relations brings extra noise that could mislead the training. Rather than working with all relations, we find that training with relations only between the most representative ones, or anchors, can significantly boost the detection performance. Good anchors should be semantic-aware with no ambiguity and able to describe the whole layout of a scene with no redundancy. To find the anchors, we first perform a preliminary relation anchor module with an objectness-aware sampling approach and then devise a displacement based
-module for weighing the relation importance for better utilization of contextual information. This light-weight relation module leads to significantly higher accuracy of object instance detection when being plugged into the state-ofthe-art detectors. Evaluations on the public benchmarks of
+module for weighing the relation importance for better utilization of contextual information. This light-weight relation module leads to significantly higher accuracy of object instance detection when being plugged into the state-of-the-art detectors. Evaluations on the public benchmarks of
 real-world scenes show that our method achieves the state-of-the-art performance on both SUN RGB-D and ScanNet V2.
 
 ![teaser](resources/teaser_disarm.jpg)
 
 ## Introduction
 
-Authors: [Yao Duan](https://yaraduan.github.io), [Chenyang Zhu](http://www.zhuchenyang.net/), [Yuqing Lan](), [Renjiao Yi](https://renjiaoyi.github.io/), [Xinwang Liu](https://xinwangliu.github.io/), [Kai Xu](http://kevinkaixu.net/index.html)*.
-
 This repo is the official implementation of ["DisARM: Displacement Aware Relation Module for 3D Detection"](https://arxiv.org/abs/2203.01152).
+
+Authors: [Yao Duan](https://yaraduan.github.io), [Chenyang Zhu](http://www.zhuchenyang.net/), [Yuqing Lan](), [Renjiao Yi](https://renjiaoyi.github.io/), [Xinwang Liu](https://xinwangliu.github.io/), [Kai Xu](http://kevinkaixu.net/index.html)*.
 
 In this repository, we provide model implementation (with MMDetection3D V0.17.1) as well as training scripts on ScanNet and SUN RGB-D.
 
