@@ -19,7 +19,7 @@ In this repository, we provide model implementation (with MMDetection3D V0.17.1)
 
 **Note:**
 
-We also will fork the `MMDetection3D` project and merge the DisAMR module to the master branch. If you want to follow the newest version, please look forward to the offical repository of MMDetection3D in the coming weeks.
+We also will fork the `MMDetection3D` project and merge the DisARM module to the master branch. If you want to follow the newest version, please look forward to the offical repository of MMDetection3D in the coming weeks.
 <!-- refer to the [offical repository](https://github.com/open-mmlab/mmdetection3d/tree/master/configs/disarm). -->
 
 
@@ -51,6 +51,7 @@ We also will fork the `MMDetection3D` project and merge the DisAMR module to the
 |[VoteNet](https://arxiv.org/abs/1904.09664)+DisARM| 61.5 | 41.3 | 
 |[imVoteNet](https://arxiv.org/abs/2001.10692)*| 64.0 | - |  
 |[imVoteNet](https://arxiv.org/abs/2001.10692)*+DisARM| 65.3 | - | 
+
 **Notes:**
 
 -  We use one NVIDIA GeForce RTX 3090 GPU for training GroupFree3D+DisARM and one NVIDIA TITAN V GPU for others. 
